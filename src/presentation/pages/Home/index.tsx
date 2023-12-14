@@ -1,5 +1,8 @@
 import { useEffect, useState } from "react";
 
+
+// Component 
+import { Test } from "../../components";
 import reactLogo from "../../../assets/react.svg";
 import viteLogo from "/vite.svg";
 
@@ -57,12 +60,42 @@ const Home = ({ children }: DefaultProps) => {
         name: "Jordan",
         age: 45,
       },
+      {
+        name: "Ja Morant",
+        age: 12,
+      },
     ];
 
+
+    // Find Spefici id Object
     // const search = tempData.find(value => value.name.toLowerCase().includes('leb'))
     // console.log('@@@ search: ', search);
 
-    setUserData(tempData);
+
+    // Delete Spefici id Object
+    // const DeleteArray = tempData.findIndex((value) => value.age === 45);
+    // tempData.splice(DeleteArray, 1);
+    
+    const DeleteArray = tempData.filter((value) => value.age !== 45);
+
+
+    const newData = {
+      name: "J Tatum",
+      age: 0,
+    }
+
+    DeleteArray.push(newData)
+
+
+    // Update spesific ID
+    const updateArray = DeleteArray.find(value => value.name.toLowerCase().includes('tatum'))
+
+    if (updateArray !== undefined){
+      updateArray.name = "Wemby" 
+      updateArray.age = 1
+    }
+
+    setUserData(DeleteArray);
   };
 
   const fibonanciFunction = (total: number) => {
@@ -116,6 +149,7 @@ const Home = ({ children }: DefaultProps) => {
           Edit <code>src/App.tsx</code> and save to test HMR
         </p>
       </div>
+      <div><Test/></div>
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>

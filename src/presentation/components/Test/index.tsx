@@ -1,8 +1,8 @@
 
-const test = () => {
+const Test = () => {
     return(
         <p>Ini Test Component</p>
     )
 }
 
-export default test;
+export default Test;
