@@ -1,0 +1,42 @@
+/* ==========================================================================
+   DEFAULT
+   ========================================================================== */
+html {
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  overscroll-behavior: none;
+  -webkit-overflow-scrolling: touch;
+}
+body {
+  // font-family: $ff-main;
+  font-weight: fw(reguler);
+  font-size: fz(body);
+  line-height: lh(body);
+  // color: color(black);
+  letter-spacing: normal;
+  overscroll-behavior: none;
+  -webkit-overflow-scrolling: touch;
+  -webkit-user-drag: none;
+}
+
+p {
+  font-size: fz(body);
+  line-height: lh(body);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: fw(bold);
+}
+
+img {
+  max-width: 100%;
+}
+
+a:active {
+  @include remove-tap-highlight;
+}
