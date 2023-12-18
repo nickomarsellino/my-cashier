@@ -1,0 +1,154 @@
+/* ==========================================================================
+   VARIABLES
+   ========================================================================== */
+
+/* ----------------------
+  - COLORS
+  ---------------------- */
+$colors: (
+  // primary colors
+  primary:
+    (
+      140: #162f63,
+      130: #1d5d99,
+      120: #1a2d5a,
+      110: #172d51,
+      100: #213f7d,
+      90: #295cc2,
+      70: #2e80e0,
+      50: #1d8fcf
+    ),
+  // secondary colors
+  yellow:
+    (
+      100: #f1c65e
+    ),
+  // shades
+  black: #121f26,
+  white: #fff,
+  grey: (
+    150: #23343f,
+    125: #425866,
+    100: #5b6e7a,
+    95: #677e8c,
+    90: #979797,
+    75: #a3b5bf,
+    50: #c5d1d8,
+    25: #ebeff2,
+    15: #f1f1f1,
+    10: #f6f7f9
+  ),
+  blue: #1d8fcf1a,
+  // system feedback
+  system:
+    (
+      error: #d70c25,
+      warning: #f96d32,
+      successful: #008873
+    ),
+  // overlay
+  overlay:
+    (
+      80: rgba(18, 31, 38, 0.8),
+      50: rgba(#000, 0.5),
+      20: rgba(#000, 0.2),
+      10: rgba(246, 247, 249, 1),
+      15: rgba(255, 255, 255, 0.5),
+      5: rgba(255, 255, 255, 0.25)
+    )
+);
+
+/* ----------------------
+  - FONT
+  ---------------------- */
+// Font Family
+// $ff-main-lato: "Lato", sans-serif;
+// $ff-main: "Helvetica Now Text", "Helvetica Now Display", sans-serif;
+
+// Font Size
+$fz: (
+  h1: 5.6rem,
+  mh1: 5.4rem,
+  h2: 4.8rem,
+  mh2: 4.6rem,
+  h3: 3.2rem,
+  h3sm: 2.8rem,
+  mh3: 3rem,
+  h4: 2rem,
+  mh4: 1.8rem,
+  body: 1.6rem,
+  // mbody: 1.6rem,
+  small: 1.4rem,
+  micro: 1.2rem,
+);
+
+// Line Height
+$lh: (
+  // NEW PEB
+  h1: 72px,
+  mh1: 72px,
+  h2: 72px,
+  mh2: 72px,
+  h3: 48px,
+  h3sm: 36px,
+  mh3: 48px,
+  h4: 32px,
+  mh4: 28px,
+  body: 24px,
+  small: 22px,
+  micro: 20px,
+);
+
+// Font Weight
+$fw: (
+  light: 300,
+  reguler: 400,
+  bold: 700,
+  black: 900
+);
+
+/* ----------------------
+  - RADIUS
+  ---------------------- */
+$radius: 2rem;
+
+/* ----------------------
+  - SCREEN
+  ---------------------- */
+$screen: (
+  large: 1440px,
+  small-desktop: 1279px,
+  medium-desktop: 1195px,
+  medium: 1024px,
+  small: 896px,
+  phone: 480px,
+  iphone5: 320px
+);
+
+/* ----------------------
+  - SHADOW
+  ---------------------- */
+$shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.1);
+$shadow-bold:
+  0 2px 15px 0 rgba(0, 0, 0, 0.1),
+  0 2px 15px 0 rgba(0, 0, 0, 0.1);
+
+/* ----------------------
+  - SPACING
+  ---------------------- */
+$spacing-4: 0.4rem;
+$spacing-8: 0.8rem;
+$spacing-16: 1.6rem;
+$spacing-24: 2.4rem;
+$spacing-32: 3.2rem;
+$spacing-40: 4rem;
+$spacing-48: 4.8rem;
+$spacing-56: 5.6rem;
+$spacing-64: 6.4rem;
+$spacing-list: 0 4 8 16 24 32 40 48 56 64 72 80 120;
+
+/* ----------------------
+  - Z-INDEX
+  ---------------------- */
+$z-header: 9;
+$z-popup: 22;
